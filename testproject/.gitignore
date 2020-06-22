@@ -40,5 +40,9 @@
 yarn-debug.log*
 .yarn-integrity
 
+database.yml
+/config/*
 .DS_Store
-.DS_STORE
+.DS_Store?
+/db/test.db
+test.db
