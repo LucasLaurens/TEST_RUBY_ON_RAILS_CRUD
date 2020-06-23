@@ -1,5 +1,5 @@
-<a href="/projects/new">New</a>
-<table>
+<a type="button" class="mt-2 mb-2 btn btn-primary" href="/projects/new">New</a>
+<table class="table table-striped">
 	<thead>
 		<tr>
 			<td>Name</td>
@@ -11,8 +11,8 @@
 			<tr>
 				<td><a href="/projects/<%= p.id %>"><%= p.name %></a></td>
 				<td>
-					<a href="/projects/edit/<%= p.id %>">Edit</a>
-					<a data-method="DELETE" href="/projects/delete/<%= p.id %>" data-confirm="êtes-vous sur ?">Delete</a>
+					<a type="button" class="btn btn-info" href="/projects/edit/<%= p.id %>">Edit</a>
+					<a type="button" class="btn btn-danger" data-method="DELETE" href="/projects/delete/<%= p.id %>" data-confirm="êtes-vous sur ?">Delete</a>
 				</td>
 			</tr>
 		<% end %>
