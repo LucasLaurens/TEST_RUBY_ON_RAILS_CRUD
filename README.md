@@ -6,9 +6,8 @@
 **1.** Commit tags:
 
     ```
-        [FEAT] new feature
-        [FIX] correction
+        [Back] new back feature
+        [Front] new front feature
         [IMPR] improvement
-        [REFACTO] refactoring, cleaning
-        [DOC] documentation, comments
+        [Fix] fix some details
     ```
