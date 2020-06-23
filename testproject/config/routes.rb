@@ -4,18 +4,23 @@ Rails.application.routes.draw do
   root to: 'projects#index'
   get '/projects', to: 'projects#index', as: 'projects'
 
-  # only one task
+  # get new form
+  get '/projects/new', to: 'projects#new'
+
+  # post a new project
+  post '/projects/create', to: 'projects#create'
+
+  # only one project
   get '/projects/:id', to: 'projects#show'
 
-  # delete a task
+  # get edit form
+  get '/projects/edit/:id', to: 'projects#edit'
+
+  # delete a project
   delete '/projects/delete/:id', to: 'projects#destroy'
 
 
 
   resources :projects
 
-  # create a task
-  # post '/create', to: 'crud#create'
-  # edit a task
-  # put '/edit', to: 'crud#edit'
 end

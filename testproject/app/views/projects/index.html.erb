@@ -1,3 +1,4 @@
+<a href="/projects/new">New</a>
 <table>
 	<thead>
 		<tr>
@@ -9,8 +10,10 @@
 		<% @projects.each do |p| %>
 			<tr>
 				<td><a href="/projects/<%= p.id %>"><%= p.name %></a></td>
-				<td><a href="/projects/edit/<%= p.id %>">Edit</a></td>
-				<td><a data-method="DELETE" href="/projects/delete/<%= p.id %>" data-confirm="êtes-vous sur ?">Delete</a></td>
+				<td>
+					<a href="/projects/edit/<%= p.id %>">Edit</a>
+					<a data-method="DELETE" href="/projects/delete/<%= p.id %>" data-confirm="êtes-vous sur ?">Delete</a>
+				</td>
 			</tr>
 		<% end %>
 	</tbody>

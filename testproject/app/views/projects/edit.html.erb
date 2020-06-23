@@ -1,0 +1,15 @@
+<h2>Edit Project</h2>
+
+<%= form_for @project do |p| %>
+	<div>
+		<label>Project Name</label>
+		<%= p.text_field :name %>
+	</div>
+	<div>
+		<label>Project Description</label>
+		<%= p.text_area :description %>
+	</div>
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+<% end %>
