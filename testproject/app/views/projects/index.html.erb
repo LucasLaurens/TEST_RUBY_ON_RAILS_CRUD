@@ -2,14 +2,13 @@
 	<thead>
 		<tr>
 			<td>Name</td>
-			<td>Description</td>
+			<td>Actions</td>
 		</tr>
 	</thead>
 	<tbody>
 		<% @projects.each do |p| %>
 			<tr>
-				<td><%= p.name %></td>
-				<td><%= p.description %></td>
+				<td><a href="/projects/<%= p.id %>"><%= p.name %></a></td>
 			</tr>
 		<% end %>
 	</tbody>

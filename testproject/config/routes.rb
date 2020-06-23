@@ -4,11 +4,13 @@ Rails.application.routes.draw do
   root to: 'projects#index'
   get '/projects', to: 'projects#index', as: 'projects'
 
+  # only one task
+  get '/projects/:id', to: 'projects#show'
+
 
 
   resources :projects
-  # only one task
-  # get '/read/:id', to: 'crud#show'
+
   # create a task
   # post '/create', to: 'crud#create'
   # edit a task
