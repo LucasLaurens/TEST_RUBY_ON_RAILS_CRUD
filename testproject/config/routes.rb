@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   # only one task
   get '/projects/:id', to: 'projects#show'
 
+  # delete a task
+  delete '/projects/delete/:id', to: 'projects#destroy'
+
 
 
   resources :projects
@@ -15,6 +18,4 @@ Rails.application.routes.draw do
   # post '/create', to: 'crud#create'
   # edit a task
   # put '/edit', to: 'crud#edit'
-  # delete a task
-  # # delete '/delete', to: 'crud#delete'
 end
