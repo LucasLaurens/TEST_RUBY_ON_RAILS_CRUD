@@ -26,6 +26,13 @@ class ProjectsController < ApplicationController
         @project = Project.find(params[:id])
     end
 
+    def update
+        # update a project
+        @project = Project.find(params[:id])
+        @project.update(project_params)
+        redirect_to projects_path
+    end
+
     def destroy
         # Delete one project
         @project = Project.find(params[:id])

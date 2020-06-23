@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   # get edit form
   get '/projects/edit/:id', to: 'projects#edit'
 
+  # update a project
+  get '/projects/update', to: 'projects#update'
+
   # delete a project
   delete '/projects/delete/:id', to: 'projects#destroy'
 
